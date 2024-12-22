@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"
 import CardDetails from "./components/CardDetails"
+import Home from "./components/Home";
 
 const App = () => {
   return (
    <>
     <Router>
       <Routes>
-        <Route path="/" element={<Navbar/>} />
+        <Route path="/" element={<Home/>} />
         
         <Route path="/story/:id" element={<CardDetails/>} />
       </Routes>

@@ -1,5 +1,4 @@
 import logo from "../assets/logoPick.jpeg"
-import Card from "./Card"
 
 const Navbar = () => {
   return (
@@ -14,7 +13,6 @@ const Navbar = () => {
         </ul>
     </nav>
 
-<Card/>
  </>
   )
 }

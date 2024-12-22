@@ -9,9 +9,7 @@ const Card = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get(
-        "https://mxpertztestapi.onrender.com/api/sciencefiction"
-      );
+      const res = await axios.get(import.meta.env.VITE_APP_URL);
       setData(res.data);
     } catch (error) {
       console.log(error);
